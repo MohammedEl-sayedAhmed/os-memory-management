@@ -92,7 +92,7 @@ Running the simulation produces:
 - `SchedulerCalc.txt` — end-of-run statistics (CPU utilisation, average weighted turnaround time, average waiting time, standard deviation of weighted turnaround time).
 - `MemoryLog.txt` — every allocation and free, with time, size, process id, and byte range.
 
-These files, along with the compiled `*.out` binaries and any generated `processes.txt`, are regenerated on each run and are not tracked in version control.
+These files, along with the compiled `*.out` binaries and any generated `processes.txt`, are regenerated on each run and are not tracked at the repository root. A captured sample run is kept as reference evidence in [`examples/sample-output/`](examples/sample-output/) — `scheduler.log`, `metrics.txt`, and `memory.log`.
 
 ## Repository layout
 
