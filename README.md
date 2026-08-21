@@ -2,7 +2,7 @@
 
 A process scheduler coupled with a buddy-system memory allocator, built on top of System V IPC as an operating-systems course project.
 
-This is **Phase 2** of the project. It extends the scheduler from **Phase 1** with dynamic memory management: every process now requests a block of memory on arrival, the memory is allocated with a buddy system, and it is freed (and coalesced) when the process finishes. Phase 1 (the scheduler on its own) lives in a separate repository: [OS-Scheduler](https://github.com/MohammedEl-sayedAhmed/OS-Scheduler).
+This is **Phase 2** of the project. It extends the scheduler from **Phase 1** with dynamic memory management: every process now requests a block of memory on arrival, the memory is allocated with a buddy system, and it is freed (and coalesced) when the process finishes. Phase 1 (the scheduler on its own) lives in a separate repository: [os-scheduler](https://github.com/MohammedEl-sayedAhmed/os-scheduler).
 
 ## Overview
 
@@ -98,19 +98,19 @@ These files, along with the compiled `*.out` binaries and any generated `process
 
 | File | Role |
 | --- | --- |
-| `process_generator.c` | reads input, spawns clock and scheduler, feeds processes |
-| `scheduler.c` | HPF / SRTN / RR scheduling + buddy-system allocator + logging |
-| `process.c` | a single scheduled process |
-| `clk.c` | emulated system clock (provided) |
-| `test_generator.c` | random `processes.txt` generator |
-| `headers.h` | shared IPC helpers (clock, message queue, send/receive) |
-| `PCB.h` | process control block definition and helpers |
-| `Queue.h` / `Queue.c` | FIFO queue used by the generator and RR |
-| `PriorityQueue.h` | priority queue used by HPF / SRTN |
-| `linkedList.h` | sorted linked list backing the buddy free lists |
-| `driverCode_linkedList.c` | stand-alone linked-list demo |
-| `testMemAlloc.c` | stand-alone buddy-allocator demo |
-| `OS_Memory.pdf` | assignment specification |
+| `src/process_generator.c` | reads input, spawns clock and scheduler, feeds processes |
+| `src/scheduler.c` | HPF / SRTN / RR scheduling + buddy-system allocator + logging |
+| `src/process.c` | a single scheduled process |
+| `src/clk.c` | emulated system clock (provided) |
+| `src/test_generator.c` | random `processes.txt` generator |
+| `include/headers.h` | shared IPC helpers (clock, message queue, send/receive) |
+| `include/PCB.h` | process control block definition and helpers |
+| `include/Queue.h` / `src/Queue.c` | FIFO queue used by the generator and RR |
+| `include/PriorityQueue.h` | priority queue used by HPF / SRTN |
+| `include/linkedList.h` | sorted linked list backing the buddy free lists |
+| `src/driverCode_linkedList.c` | stand-alone linked-list demo |
+| `src/testMemAlloc.c` | stand-alone buddy-allocator demo |
+| `docs/OS_Memory.pdf` | assignment specification |
 
 ## Authors
 
