@@ -114,7 +114,7 @@ These files, along with the compiled `*.out` binaries and any generated `process
 
 ## Authors
 
-- Mohammed El-sayed Ahmed
-- Nadine-Amr
-- Rahma2015
-- TasneemOmara
+- [Mohammed El-sayed Ahmed](https://github.com/MohammedEl-sayedAhmed)
+- [Nadine Amin](https://github.com/nadine-amin)
+- [Rahma](https://github.com/Rahma2015)
+- [Tasneem Omara](https://github.com/TasneemOmara)
